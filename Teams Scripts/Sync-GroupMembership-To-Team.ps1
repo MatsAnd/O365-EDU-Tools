@@ -33,7 +33,7 @@ Param (
 function Initialize() {
     import-module Microsoft.Graph.Authentication -MinimumVersion 0.9.1
     Write-Output "If prompted, please use a tenant admin-account to grant access to 'TeamMember.ReadWrite.All' and 'Group.Read.All' privileges"
-    connect-graph -scopes TeamMember.ReadWrite.All,Group.Read.All
+    connect-graph -scopes TeamMember.ReadWrite.All,Group.Read.All,User.Read.All
 }
 
 # invoke-GraphRequest
